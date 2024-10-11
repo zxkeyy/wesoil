@@ -18,7 +18,13 @@ const NavBar = ({ ...props }: Props) => {
       paddingTop={3}
       {...props}
     >
-      <Image src={logo} />
+      <Image
+        src={logo}
+        onClick={() => {
+          window.location.href = "/";
+        }}
+        cursor={"pointer"}
+      />
       <Box
         display="flex"
         justifyContent={"space-between"}
