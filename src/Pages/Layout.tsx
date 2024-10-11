@@ -14,6 +14,7 @@ const Layout = () => {
         flexDir={"column"}
         alignItems={"center"}
         minHeight={screen.height}
+        minWidth={"1200px"}
       >
         <Box
           display={"flex"}

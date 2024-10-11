@@ -10,7 +10,7 @@ import ServicesCarousel from "./Components/ServisesCarousel/ServicesCarousel";
 const AboutPage = () => {
   return (
     <>
-      <Box bg={"brand.600"} width={"65%"}>
+      <Box bg={"brand.600"} width={"65%"} minWidth={"1200px"}>
         <Hero />
         <InfoBar marginTop={10} />
         <AboutUd marginTop={32} />
@@ -26,7 +26,9 @@ const AboutPage = () => {
           <OurServicesLetter />
         </Box>
       </Box>
-      <ReviewsPanel />
+      <Box minWidth={"1200px"} width={"100%"}>
+        <ReviewsPanel/>
+      </Box>
     </>
   );
 };

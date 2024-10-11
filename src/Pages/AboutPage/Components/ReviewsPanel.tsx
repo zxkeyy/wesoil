@@ -13,6 +13,7 @@ const ReviewsPanel = () => {
       height={innerWidth * 0.78}
       display={"flex"}
       justifyContent={"center"}
+      minHeight={"100vh"}
     >
       <Box
         width={"65%"}
