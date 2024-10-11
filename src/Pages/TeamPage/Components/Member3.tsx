@@ -1,5 +1,5 @@
 import { Avatar, Box, BoxProps, Text } from "@chakra-ui/react";
-import avatar1 from "../../../assets/Ellipse 36.png";
+import avatar1 from "../../../assets/36.png";
 
 interface Props extends BoxProps {}
 

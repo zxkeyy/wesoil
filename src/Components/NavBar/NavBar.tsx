@@ -29,20 +29,20 @@ const NavBar = ({ ...props }: Props) => {
         <Link to={"/"}>
           <NavButton aria-selected={location.pathname === "/"}>About</NavButton>
         </Link>
-        <Link to={"/platform"}>
-          <NavButton aria-selected={location.pathname === "/platform"}>Platform</NavButton>
-        </Link>
         <Link to={"/devices"}>
-          <NavButton aria-selected={location.pathname === "/devices"}>Devices</NavButton>
+          <NavButton aria-selected={location.pathname === "/devices"}>
+            Devices
+          </NavButton>
         </Link>
         <Link to={"/technology"}>
-          <NavButton aria-selected={location.pathname === "/technology"}>Technology</NavButton>
+          <NavButton aria-selected={location.pathname === "/technology"}>
+            Technology
+          </NavButton>
         </Link>
         <Link to={"/team"}>
-          <NavButton aria-selected={location.pathname === "/team"}>Team</NavButton>
-        </Link>
-        <Link to={"/blog"}>
-          <NavButton aria-selected={location.pathname === "/blog"}>Blog</NavButton>
+          <NavButton aria-selected={location.pathname === "/team"}>
+            Team
+          </NavButton>
         </Link>
       </Box>
       <Button
