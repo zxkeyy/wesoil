@@ -21,7 +21,7 @@ const NavBar = ({ ...props }: Props) => {
       <Image
         src={logo}
         onClick={() => {
-          window.location.href = "/";
+          window.location.href = import.meta.env.BASE_URL;
         }}
         cursor={"pointer"}
       />
