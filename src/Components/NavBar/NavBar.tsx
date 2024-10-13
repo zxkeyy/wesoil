@@ -18,13 +18,9 @@ const NavBar = ({ ...props }: Props) => {
       paddingTop={3}
       {...props}
     >
-      <Image
-        src={logo}
-        onClick={() => {
-          window.location.href = import.meta.env.BASE_URL;
-        }}
-        cursor={"pointer"}
-      />
+      <Link to={import.meta.env.BASE_URL + ""}>
+        <Image src={logo} cursor={"pointer"} />
+      </Link>
       <Box
         display="flex"
         justifyContent={"space-between"}
@@ -32,21 +28,37 @@ const NavBar = ({ ...props }: Props) => {
         height="fit-content"
         width="60%"
       >
-        <Link to={"/"}>
-          <NavButton aria-selected={location.pathname === "/"}>About</NavButton>
+        <Link to={import.meta.env.BASE_URL + ""}>
+          <NavButton
+            aria-selected={location.pathname === import.meta.env.BASE_URL + ""}
+          >
+            About
+          </NavButton>
         </Link>
-        <Link to={"/devices"}>
-          <NavButton aria-selected={location.pathname === "/devices"}>
+        <Link to={import.meta.env.BASE_URL + "devices"}>
+          <NavButton
+            aria-selected={
+              location.pathname === import.meta.env.BASE_URL + "devices"
+            }
+          >
             Devices
           </NavButton>
         </Link>
-        <Link to={"/technology"}>
-          <NavButton aria-selected={location.pathname === "/technology"}>
+        <Link to={import.meta.env.BASE_URL + "technology"}>
+          <NavButton
+            aria-selected={
+              location.pathname === import.meta.env.BASE_URL + "technology"
+            }
+          >
             Technology
           </NavButton>
         </Link>
-        <Link to={"/team"}>
-          <NavButton aria-selected={location.pathname === "/team"}>
+        <Link to={import.meta.env.BASE_URL + "team"}>
+          <NavButton
+            aria-selected={
+              location.pathname === import.meta.env.BASE_URL + "team"
+            }
+          >
             Team
           </NavButton>
         </Link>
